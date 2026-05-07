@@ -26,4 +26,3 @@ git pull origin master
 - object
 - class
 - operation
--
