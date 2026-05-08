@@ -30,3 +30,20 @@ result2 = greeting("Aisha")
 print("result2:", result2)
 
 print("======PARAMETR VS ARGUMENT=======")
+
+print("======KEYWORD VS DEFAULT ARGUMENTS  =======")
+# DEFINE
+
+
+def give_greet(name, age=22):  # default 22 years old
+    print("give_greet is executed")
+    return f"hi {name}, you are {age} years old "
+
+# call
+
+
+result3 = give_greet(name="Dina", age=21)  # keyword argument
+print("result3:", result3)
+
+result4 = give_greet("Aisha")  # default argument
+print("result4:", result4)
