@@ -47,3 +47,19 @@ print("result3:", result3)
 
 result4 = give_greet("Aisha")  # default argument
 print("result4:", result4)
+
+
+print("======SCOPE =======")
+b = 100
+
+# define the function
+
+
+def calculate(a, b):
+    c = a * b
+    print(f"the c value: {c}")
+
+
+# birinchi navbatda block ichidan izlidi, keyib parametrdan , topolmasa tashqaridan izlaydi
+# call the function
+calculate(5, 50)
