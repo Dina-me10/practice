@@ -28,3 +28,20 @@ print("result1", result1)
 
 result2 = ceil(98.7)
 print("result2", result2)
+
+print("==========error handling systems ========")
+
+car_dict = dict(name="tayota", year=2026, electric=True)
+
+
+try:
+    print("======================passed here ============")
+    a = car_dict.speed
+    result = car_dict["origin"]
+    print("result:", result)
+except KeyError as err:
+    print("No speed found", err)
+else:
+    print("executed succcesfully without error")
+finally:
+    print("final closing logic")
