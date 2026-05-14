@@ -25,4 +25,6 @@ git pull origin master
 - function
 - object
 - class
-- operation
+- classes deep dive
+- operation- conditions
+- loops
