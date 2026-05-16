@@ -6,7 +6,7 @@ TUPLE
 
 '''
 print('=== tuples vs list  ===')
-
+# ITERABLE OBJECTS>  string dict tuple zip list range map filter
 
 '''
 list vs tuple:
@@ -68,7 +68,7 @@ def introduce(**kwargs):
     print(f"Hi I'm {kwargs["name"]} and I'm {kwargs["age"]} years old")
 
 
-introduce(name="Aisha", age=21)
+introduce(name="Aisha", age=20)
 introduce(name="Dina", age=21, single=True)
 
 print('=== args & kwargs ===')
@@ -80,3 +80,11 @@ def greet(*args, **kwargs):
 
 
 greet("hi", True, name="Aisha", age=20)
+
+print('=== zip ===')
+tuple1 = (1, 2, 3, 4)
+tuple2 = ("a", "b", "c")
+zipped = zip(tuple1, tuple2)
+print(zipped)
+result = list(zipped)
+print(result)
