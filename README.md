@@ -24,7 +24,13 @@ git pull origin master
 - primitive
 - function
 - object
-- class
-- classes deep dive
+- class about
+- classes deep dive > encapsulation
+- class deep dive > inheritance polimorphism
 - operation- conditions
 - loops
+- tuple
+- list
+- array
+- comprhension
+- debugging
