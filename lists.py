@@ -110,3 +110,42 @@ print(f'Case 1: {people}')
 
 people.sort(key=lambda person: person[1])
 print(f"Case 2: {people}")
+
+
+print("-------enumerate, map and filter--------")
+print("✅"*20)
+
+countries = ["Uzbekistan", "Qatar", "USA"]
+for element in enumerate(countries):
+    print(f"Element: {element}")
+
+for (a, b) in enumerate(countries):
+    print(f"Index: {a} and Value: {b}")
+
+dict_obj = dict(brand="BMW", year=2026)
+result = dict_obj.items()  # items by itself turns an object to array/list
+print(result)
+for (x, y) in result:
+    print(f"the key: {x} and the value {y}")
+
+
+print("=== map ===")
+print("✅"*20)
+
+cars = [
+    ("BMW", 100),
+    ("Rolsroys", 87),
+    ("Genesis", 116),
+    ("Kia", 109),
+    ("Mers", 33),
+]
+
+result = map(lambda car: car[0], cars)
+new_cars = list(result)
+print(new_cars)
+
+print("=== filter ===")
+
+result = filter(lambda age: age[1] > 80, cars)
+new = list(result)
+print(new)
