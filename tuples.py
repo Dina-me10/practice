@@ -30,6 +30,31 @@ print(fruits)
 animal = ("yo'lbars", "maymun", "eshak", "it")
 tuple_obj = ("MIT", 2026, True)
 
-print(animal[0])  # Birinchi elementni ko'rish
+print(animal[0])
 
 print(animal)
+
+print("=== Argumentlarni yoyish (Unpacking) ===")
+
+groups = ["MIT", "Flexy", "Devex", "MG"]
+# Unpacking: x va y birinchi ikkita qiymatni oladi, *z esa qolganlarini ro'yxatga yig'adi
+(x, y, *z) = groups
+print(f"z ga qolgan barcha elementlar tushdi: {z}")
+
+
+def calculate(*args):
+    # *args - istalgancha sondagi oddiy argumentlarni qabul qiladi (tuple ko'rinishida)
+    print("*args (kelgan sonlar):", args)
+    total = 1
+    for x in args:
+        total *= x
+    print(f"umumiy natija: {total}")
+    return total
+
+
+# Turli xil sondagi argumentlar bilan chaqiramiz
+calculate(1, 7, 4, 5)
+print('--------------')
+calculate(0, 2, 300)
+print('--------------')
+calculate(5, 7)
