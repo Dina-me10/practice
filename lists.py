@@ -86,3 +86,27 @@ print(f"SORT with REVERSE result {numbers}")
 numbs = [2, 1, 100, 4, 7, 8]
 sort_numbs = sorted(numbs)
 print(f"the numbs: {numbs} and sorted numbs {sort_numbs}")
+
+print("=== lambda function ===")
+print("✅"*20)
+# lambda is small anonim function
+
+
+def calculate(a, b): return a * b
+
+
+result = calculate(3, 5)
+print(result)
+
+people = [
+    ("Aisha", 20),
+    ("Dina", 21),
+    ("Alex", 25),
+    ("Mery", 30)
+]
+
+people.sort()
+print(f'Case 1: {people}')
+
+people.sort(key=lambda person: person[1])
+print(f"Case 2: {people}")
