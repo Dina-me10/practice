@@ -36,3 +36,17 @@ with Image.open("material/logo.jpg") as img_obj:
     resize = img_obj.resize((200, 200))
     resize.show()
     resize.save("material/result.jpg")
+
+print("=== Debugging ===")
+
+
+def get_summary(*args):
+    total = 0
+    for a in args:
+        total += a
+        return total  # solve the bug  debugging
+
+
+test = 100
+result = get_summary(20, 20, 40, 50)  # call
+print("result", result)

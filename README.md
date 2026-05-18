@@ -34,3 +34,11 @@ git pull origin master
 - array
 - comprhension
 - debugging
+
+## PIP commands
+
+pip list
+pip install pillow
+pip uninstall pillow
+pip show
+pip freeze > requirements.txt
