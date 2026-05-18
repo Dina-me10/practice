@@ -3,6 +3,7 @@ PACKAGES  / DEBUGGING
 (1) python packages / core package 
 (2) package manager / external package 
 '''
+from PIL import Image
 import turtle
 
 t = turtle.Turtle()
@@ -26,3 +27,12 @@ with open("material/message.txt", "r") as your_file:
     print("your_content:", your_content)
 
 print("done")
+
+print("=== Package manager & External packages ===")
+# Package manager for PYTHON: pip, pipenv
+# Package manager for NODEJS: npm yarn
+
+with Image.open("material/logo.jpg") as img_obj:
+    resize = img_obj.resize((200, 200))
+    resize.show()
+    resize.save("material/result.jpg")
