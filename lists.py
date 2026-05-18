@@ -25,7 +25,7 @@ fruits = ["apple", "banana", "orange", "kiwi", "lemon"]
 
 a = fruits[0]
 b = fruits[0:2]  # [0, 2)
-c = fruits[::3]
+c = fruits[0::3]
 d = fruits[::-1]
 
 print(f"a: {a}")
